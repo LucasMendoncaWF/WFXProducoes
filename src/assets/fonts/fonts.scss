@@ -1,0 +1,18 @@
+@font-face {
+  font-family: coolvetica;
+  src: url('/assets/fonts/CoolveticaLt-Regular.ttf');
+}
+
+@font-face {
+  font-family: coolvetica_bold;
+  src: url('/assets/fonts/CoolveticaHv-Regular.ttf');
+}
+
+@font-face {
+  font-family: coolvetica_light;
+  src: url('/assets/fonts/CoolveticaEl-Regular.ttf');
+}
+
+$font-light: coolvetica_light;
+$font-bold: coolvetica_bold;
+$font: coolvetica;
