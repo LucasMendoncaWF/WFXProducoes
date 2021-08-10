@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/fonts/fonts.scss';
+@import './assets/variables.scss';
 
 * {
   font-family: $font;
@@ -11,10 +12,81 @@ body {
   margin: 0;
 }
 
-.dark .theme-content{
-  background-color: black;
+.dark .theme-content, .dark .theme-header {
+  background-color: $darkColor;
+  color: $lightColor;
+  transition: 0.3s;
 }
 
-.light .theme-content{
-  background-color: white;
+.light .theme-content, .light .theme-header {
+  background-color: $lightColor;
+  color: $darkColor;
+  transition: 0.3s;
+}
+
+.dark .theme-text{
+  color: $lightColor;
+}
+
+.light .theme-text{
+  color: $darkColor;
+}
+
+.image-shadow {
+  transition: 0.3s;
+}
+
+.dark .image-shadow {
+  box-shadow: 2px 7px 20px 0px $darkColor;
+}
+
+.light .image-shadow{
+  box-shadow: 2px 7px 20px 0px $lightColor;
+}
+
+.theme-border-top {
+  margin: 20px 0px;
+}
+
+.light .theme-border-top{
+  border-top: 1px solid $darkColor;
+}
+
+.dark .theme-border-top{
+  border-top: 1px solid $lightColor;
+  opacity: 0.8;
+}
+
+.not-found-text {
+  font-size: 40px;
+  padding: 100px 0;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+  background-image: url('/assets/images/banner-home.jpg');
+  text-shadow: 2px 0px 9px $darkColor;
+}
+
+.mobile {
+  display: none;
+}
+
+a {
+  transition: 0.4s;
+  
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+@media only screen and (max-width: $mobileSize) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
 }

@@ -1,0 +1,12 @@
+<div class="project" [ngClass]="isRight ? 'right-project' : ''">
+  <div class="project-image image-shadow" *ngIf="!isRight" [style.background-image]="'url(/assets/images/'+ project.image +')'"></div>
+  <div class="project-image image-shadow mobile" *ngIf="isRight" [style.background-image]="'url(/assets/images/'+ project.image +')'"></div>
+  <div class="project-text theme-text">
+    <hr class="theme-border-top desktop" />
+    <div class="title">{{ project.projectName }}</div>
+    <div [innerHtml]="project.text"></div>
+    <a [routerLink]="'/projeto/' + project.projectName.toLowerCase()" class="theme-text">Saiba mais</a>
+    <hr class="theme-border-top mobile" />
+  </div>
+  <div class="project-image image-shadow desktop" *ngIf="isRight" [style.background-image]="'url(/assets/images/'+ project.image +')'"></div>
+</div>

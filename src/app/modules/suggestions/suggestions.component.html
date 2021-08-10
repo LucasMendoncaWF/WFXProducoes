@@ -1,0 +1,10 @@
+<div class="suggestions">
+  <hr class="theme-border-top" />
+  <div class="title">{{ isDetailPage? 'Outros' : '' }} projetos que podem te interessar:</div>
+  <div *ngIf="!startFromRight" >
+    <app-project [project]="project" [isRight]="!!(projects.indexOf(project) % 2)" *ngFor="let project of projects"></app-project>
+  </div>
+  <div *ngIf="startFromRight" >
+    <app-project [project]="project"  [isRight]="!(projects.indexOf(project) % 2)" *ngFor="let project of projects"></app-project>
+  </div>
+</div>

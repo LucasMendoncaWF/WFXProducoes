@@ -1,0 +1,48 @@
+@import '../../../assets/variables.scss';
+
+section {
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+}
+
+.categories {
+  margin-left: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category {
+  width: calc(15% - 30px - 40px);
+  margin: 0 20px;
+  text-align: center;
+  padding: 15px 20px;
+  background-color: $themeColor;
+}
+
+a {
+  color: $lightColor;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.4s;
+  border-radius: 10px;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: $darkThemeColor;
+  }
+}
+
+@media only screen and (max-width: $mobileSize) {
+  .category {
+    width: calc(45% - 80px);
+    margin-bottom: 30px;  
+  }
+}

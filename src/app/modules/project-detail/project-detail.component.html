@@ -1,2 +1,12 @@
-<section class="detail">
+<section class="detail theme-content">
+  <div class="banner" [style.background-image]="'url(/assets/images/'+ project.banner +')'">
+    <span *ngIf="!project.hasLogo">{{ project.title }}</span>
+  </div>
+  <div class="content" [innerHtml]="project.html"></div>
+
+  <div class="not-found-text" *ngIf="!loading && !project.title">Projeto não encontrado!</div>
+  <app-suggestions [excludeTitle]="project.title" [isDetailPage]="true"></app-suggestions>
+  <app-footer></app-footer>
+
+  
 </section>

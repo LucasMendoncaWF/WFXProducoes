@@ -8,7 +8,7 @@ import { DarkmodeService } from './services/darkmode.service';
 })
 export class AppComponent implements OnInit {
   title = 'wfxproducoes';
-  @HostBinding('class.dark') isDark;
+  @HostBinding('class.dark') isDark = true;
 
   constructor(
     private darkmodeService: DarkmodeService,

@@ -1,0 +1,8 @@
+<section>
+  <div class="title">Categorias:</div>
+  <div class="categories">
+    <a [routerLink]="category.link" class="category" *ngFor="let category of categories">
+      {{ category.name }}
+    </a>
+  </div>
+</section>

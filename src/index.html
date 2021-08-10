@@ -7,8 +7,43 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    .loading{
+      align-self: center;
+      margin-left: calc(50vw - 53px);
+      margin-top: calc(50vh - 53px);
+      border: 6px solid rgba(0, 0, 0, 0.1);
+      border-top: 6px solid #232323;
+      border-radius: 50%;
+      background: transparent;
+      width: 100px;
+      height: 100px;
+      animation: spin 1.2s linear infinite;
+      box-shadow: 0 0 20px 4px #cecece;
+    }
+
+    @keyframes spin {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+
+    @media only screen and (max-width: 1000px){
+      .loading{
+        box-shadow: none;
+      }
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="app-loading">
+      <svg class="loading" viewBox="25 25 50 50">
+      </svg>
+    </div>
+  </app-root>
 </body>
 </html>

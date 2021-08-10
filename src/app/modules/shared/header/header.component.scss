@@ -1,3 +1,131 @@
+@import '../../../../assets/variables.scss';
+
 .header {
   padding: 20px;
+  display: flex;
+  width: calc(100% - 40px);
+  position: relative;
+  z-index: 9999;
+}
+
+button {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+
+.links {
+  right: 0;
+  position: absolute;
+}
+
+.logo {
+  width: 30%;
+}
+
+.header-content {
+  width: 60%;
+  margin-left: 20%;
+  display: flex;
+  position: relative;
+}
+
+button, .icon-link{
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  float: right;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 15px;
+
+  &:visited {
+    color: unset;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.light {
+  border-bottom: 1px solid $darkColor;
+
+  #youtube {
+    background-image: url('/assets/icons/youtube_dark.png');
+  }
+
+  #instagram {
+    background-image: url('/assets/icons/instagram_dark.png');
+  }
+
+  #twitter {
+    background-image: url('/assets/icons/twitter_dark.png');
+  }
+
+  button{
+    background-image: url('/assets/icons/dark.png');
+  }
+
+  a {
+    color: $darkColor;
+  }
+}
+
+.dark {
+  border-bottom: 1px solid $lightGray;
+
+  #youtube {
+    background-image: url('/assets/icons/youtube_light.png');
+  }
+
+  #instagram {
+    background-image: url('/assets/icons/instagram_light.png');
+  }
+
+  #twitter {
+    background-image: url('/assets/icons/twitter_light.png');
+  }
+
+  button{
+    background-image: url('/assets/icons/light.png');
+  } 
+  
+  a {
+    color: $lightColor;
+  }
+}
+
+.icon-link{
+  width: 18px;
+  height: 18px;
+}
+
+
+@media only screen and (max-width: $mobileSize) {
+  .header-content {
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  a {
+    margin: 0 10px;
+  }
+
+  .links {
+    margin-right: 50px;
+  }
 }

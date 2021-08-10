@@ -1,3 +1,10 @@
-<section class="home theme-content">
-  pika
+<section #home class="home theme-content">
+  <div class="logo-area">
+    pika
+  </div>
+  <div class="content theme-content">
+    <app-project [project]="project" [isRight]="!!(projects.indexOf(project) % 2)" *ngFor="let project of projects"></app-project>
+    <app-categories *ngIf="showCategories"></app-categories>
+  </div>
+  <app-footer></app-footer>
 </section>
