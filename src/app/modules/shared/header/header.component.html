@@ -4,11 +4,14 @@
     <div class="links">
       <a routerLink="">Inicio</a>
       <a routerLink="sobre">Sobre</a>
-      <a class="icon-link" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a>
-      <!--<a class="icon-link" id="instagram" href="https://www.instagram.com/lucaswfx_/" target="_blank"></a>-->
-      <a class="icon-link" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a>
+      <a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/youtube_light.png)'" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a>
+      <a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/twitter_light.png)'" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a>
+
+      <a class="icon-link" [style.background-image]="'url(/assets/icons/youtube_dark.png)'" *ngIf="!darkmode" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a>
+      <a class="icon-link" [style.background-image]="'url(/assets/icons/twitter_dark.png)'" *ngIf="!darkmode" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a>
     </div>
   </div>
   
-  <button (click)="toggleDarkMode()" title="darkmode"></button>
+  <button [style.background-image]="'url(/assets/icons/dark.png)'"  *ngIf="!darkmode" (click)="toggleDarkMode()" title="darkmode"></button>
+  <button [style.background-image]="'url(/assets/icons/light.png)'"  *ngIf="darkmode" (click)="toggleDarkMode()" title="darkmode"></button>
 </section>
