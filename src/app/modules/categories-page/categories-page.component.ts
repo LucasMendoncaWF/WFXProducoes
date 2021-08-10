@@ -8,6 +8,7 @@ import { projects } from '../projects';
   styleUrls: ['./categories-page.component.scss']
 })
 export class CategoriesPageComponent implements OnInit {
+  showCategories = true;
   loading = true;
   projects = [];
   constructor(private route: ActivatedRoute) { }

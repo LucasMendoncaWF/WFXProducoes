@@ -8,7 +8,7 @@ import { projectDetails } from '../projectDetails';
   styleUrls: ['./project-detail.component.scss']
 })
 export class ProjectDetailComponent implements OnInit {
-  project = {};
+  project;
   loading = true;
   constructor(private route: ActivatedRoute) { }
 
