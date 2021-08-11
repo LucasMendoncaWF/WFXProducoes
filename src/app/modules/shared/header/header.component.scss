@@ -6,6 +6,7 @@
   width: calc(100% - 40px);
   position: relative;
   z-index: 9999;
+  user-select: none;
 }
 
 button {
@@ -58,7 +59,12 @@ a {
   &:hover {
     cursor: pointer;
     opacity: 0.8;
+    color: $themeColor !important;
   }
+}
+
+.dark-icon {
+  opacity: 0.9;
 }
 
 .light {

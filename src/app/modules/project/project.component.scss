@@ -37,6 +37,10 @@
   margin-left: -20px;
 }
 
+.right-project .project-text {
+  text-align: right;
+}
+
 .project-text {
   width: calc(52% - 100px);
   padding: 50px;
@@ -117,10 +121,11 @@
     }
   }
 
-  .project-text {
+  .project-text, .right-project .project-text {
     width: calc(100% - 60px);
     padding: 30px;
     padding-bottom: 0;
+    text-align: left;
   }
 
   .project-image {

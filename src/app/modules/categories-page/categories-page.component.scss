@@ -10,9 +10,12 @@
 }
 
 .logo-area {
-  height: 300px;
-  padding: 50px;
+  padding: 100px;
+  padding-bottom: 120px;
   text-align: center;
+  text-transform: capitalize;
+  font-size: 50px;
+  text-shadow: 2px 0px 9px $darkColor;
 }
 
 .content {

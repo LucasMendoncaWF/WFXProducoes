@@ -1,3 +1,61 @@
+@import '../../../assets/variables.scss';
+
+.banner {
+  background-image: url('/assets/images/sobre.jpg');
+  background-size: cover;
+  color: $lightColor;
+  text-shadow: 2px 0px 9px $darkColor;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 100px 0;
+}
+
 section {
-  min-height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.about-text {
+  padding: 50px 40px;
+  line-height: 30px;
+  font-size: 18px;
+  width: calc(60% - 80px);
+}
+
+.area-title {
+  text-transform: capitalize;
+  font-size: 30px;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+  margin: 50px 0px;
+  width: calc(40% - 80px);
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: $mobileSize) {
+  .about-text {
+    width: calc(100% - 80px);
+  }
+
+  .area-title {
+    padding-top: 0;
+  }
 }

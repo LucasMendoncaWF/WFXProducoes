@@ -1,6 +1,7 @@
 <section #home class="home theme-content">
   <div class="logo-area">
-    pika
+    <div class="logo">WFX PRODUÇÕES</div>
+    <div class="about text-shadow">Incentivamos a criatividade, investimos em ideias e ajudamos histórias a criarem vida.</div>
   </div>
   <div class="content theme-content">
     <app-project [project]="project" [isRight]="!!(projects.indexOf(project) % 2)" *ngFor="let project of projects"></app-project>

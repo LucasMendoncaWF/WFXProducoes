@@ -17,7 +17,7 @@
 }
 
 .detail {
-  min-height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px);
   overflow: auto;
   overflow-x: hidden;
 }

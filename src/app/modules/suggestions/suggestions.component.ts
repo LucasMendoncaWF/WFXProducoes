@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 import { projects } from '../projects';
 
 @Component({
@@ -6,7 +6,7 @@ import { projects } from '../projects';
   templateUrl: './suggestions.component.html',
   styleUrls: ['./suggestions.component.scss']
 })
-export class SuggestionsComponent implements OnInit {
+export class SuggestionsComponent implements OnChanges {
   @Input() excludeCategory = '';
   @Input() excludeTitle = '';
   @Input() isDetailPage = false;
@@ -15,7 +15,7 @@ export class SuggestionsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnChanges() {
     this.projects = projects
     .filter(project => project.isHome && this.checkCategory(project) && this.checkTitle(project));
   }

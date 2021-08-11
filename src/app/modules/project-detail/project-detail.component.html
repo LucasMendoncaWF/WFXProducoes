@@ -1,4 +1,4 @@
-<section class="detail theme-content">
+<section #detailProject class="detail theme-content">
   <div *ngIf="project && project.title">
     <div class="banner" [style.background-image]="'url(/assets/images/'+ project.banner +')'">
       <span *ngIf="!project.hasLogo">{{ project.title }}</span>

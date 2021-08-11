@@ -8,18 +8,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style type="text/css">
+    .app-loading {
+      width: 100vw;
+      height: 100vh;
+      background-color: #232323;
+    }
+
+    .loading-title {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      padding-top: calc(50vh - 53px - 100px);
+    }
+
     .loading{
       align-self: center;
       margin-left: calc(50vw - 53px);
-      margin-top: calc(50vh - 53px);
+      margin-top: 50px;
       border: 6px solid rgba(0, 0, 0, 0.1);
-      border-top: 6px solid #232323;
+      border-top: 6px solid white;
       border-radius: 50%;
       background: transparent;
       width: 100px;
       height: 100px;
       animation: spin 1.2s linear infinite;
-      box-shadow: 0 0 20px 4px #cecece;
     }
 
     @keyframes spin {
@@ -41,6 +53,7 @@
 <body>
   <app-root>
     <div class="app-loading">
+      <div class="loading-title">Carregando...</div>
       <svg class="loading" viewBox="25 25 50 50">
       </svg>
     </div>

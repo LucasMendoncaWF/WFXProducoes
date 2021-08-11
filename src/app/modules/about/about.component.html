@@ -1,3 +1,25 @@
 <section class="theme-content">
+  <div class="banner">
+    <div class="banner-title">Sobre Nós</div>
+  </div>
+  <div class="content">
+    <div class="theme-text about-text">
+      <p>A WFX produções, foi fundada com o objetivo de ajudar pessoas a criarem e darem forma às suas histórias.</p>
 
+      <p>Avaliamos e auxiliamos ideias a melhorarem e poderem ser apresentadas para empresas e pessoas, fazendo com que suas histórias possam ser ouvidas.</p>
+
+      <p>Somos a favor de ouvir a criatividade de todos e desenvolver o lado artístico de cada um.</p>
+
+      <p>Estamos sempre abertos a receber ideias, auxiliar boas histórias a se desenvolver e a responder perguntas sobre: Roteiro, pitching, gravação, direção e tudo o que envolve o processo de criação.</p>
+
+    </div>
+    <div class="image desktop" [style.background-image]="'url(/assets/images/sobre-texto.jpg)'"></div>
+  </div>
+  <div class="team">
+    <div class="area-title">Nosso time:</div>
+    <div class="team-members">
+      <app-team-member [member]="member" *ngFor="let member of members"></app-team-member>
+    </div>
+  </div>
+  <app-footer></app-footer>
 </section>

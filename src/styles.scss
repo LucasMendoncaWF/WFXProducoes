@@ -68,6 +68,10 @@ body {
   text-shadow: 2px 0px 9px $darkColor;
 }
 
+.text-shadow {
+  text-shadow: 2px 0px 9px $darkColor;
+}
+
 .mobile {
   display: none;
 }
@@ -77,6 +81,12 @@ a {
   
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.links a, a.theme-text {
+  &:hover {
+    color: $themeColor;
   }
 }
 
