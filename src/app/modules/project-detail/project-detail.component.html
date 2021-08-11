@@ -1,12 +1,38 @@
 <section #detailProject class="detail theme-content">
-  <div *ngIf="project && project.title">
+  <div *ngIf="project && project.projectName">
     <div class="banner" [style.background-image]="'url(/assets/images/'+ project.banner +')'">
-      <span *ngIf="!project.hasLogo">{{ project.title }}</span>
+      <span *ngIf="!project.hasLogo">{{ project.projectName }}</span>
     </div>
-    <div class="content" [innerHtml]="project.html"></div>
+    <div class="content">
+      <div class="principal">
+        <p><b>Sinopse:</b> {{ project.sinopse }}</p>
+        <p *ngIf="project.type"><b>Gênero:</b> {{ project.type }};</p>
+        <p *ngIf="project.format"><b>Formato:</b> {{ project.format }};</p>
+        <p *ngIf="project.qtd">{{ project.qtd }};</p>
+      </div>
+
+      <div *ngIf="project.infos" class="info-area">
+        <span class="session-title theme-border-top">Mais Informações:</span>
+        <div class="info" *ngFor="let info of project.infos">
+          <p [innerHtml]="text" *ngFor="let text of info.texts" class="theme-text"></p>
+          <div class="image">
+            <img *ngIf="info.image" [ngClass]="'image-' + info.image.size " [src]="'/assets/images/'+ info.image.name"/>
+          </div>
+          <div class="video" *ngIf="info.video">
+            <iframe width="100%" [src]="videoUrl(info.video)" title="video" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="project.participants" class="participants">
+        <span class="session-title theme-border-top">Participantes:</span>
+        <div class="list">
+          <app-team-member [member]="member" *ngFor="let member of project.participants"></app-team-member>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="not-found-text" *ngIf="!loading && !project.title">Projeto não encontrado!</div>
-  <app-suggestions [excludeTitle]="project.title" [isDetailPage]="true"></app-suggestions>
+  <div class="not-found-text" *ngIf="!loading && !project.projectName">Projeto não encontrado!</div>
+  <app-suggestions [excludeTitle]="project.projectName" [isDetailPage]="true"></app-suggestions>
   <app-footer></app-footer>
   
 </section>

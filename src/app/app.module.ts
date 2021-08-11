@@ -14,6 +14,7 @@ import { CategoriesPageComponent } from './modules/categories-page/categories-pa
 import { SuggestionsComponent } from './modules/suggestions/suggestions.component';
 import { AboutComponent } from './modules/about/about.component';
 import { TeamMemberComponent } from './modules/team-member/team-member.component';
+import { SafePipeModule } from 'safe-pipe';
 
 @NgModule({
   declarations: [
@@ -28,11 +29,11 @@ import { TeamMemberComponent } from './modules/team-member/team-member.component
     CategoriesPageComponent,
     SuggestionsComponent,
     AboutComponent,
-    TeamMemberComponent
+    TeamMemberComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

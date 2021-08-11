@@ -21,3 +21,62 @@
   overflow: auto;
   overflow-x: hidden;
 }
+
+.image-small{
+  width: 20%;
+}
+
+.image-medium{
+  width: 40%;
+}
+
+.image-big{
+  width: 100%;
+}
+
+
+.content {
+  padding: 20px 20%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+iframe {
+  height: 450px;
+}
+
+.session-title {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-family: $font-bold;
+  font-size: 22px;
+}
+
+.principal, .info-area {
+  margin-bottom: 80px;
+}
+
+.info .image {
+  margin: 30px 0;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: $mobileSize) {
+  .content {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .image-small, .image-medium, .image-big {
+    width: 100%;
+  }
+
+  iframe {
+    height: 300px;
+  }
+  
+}

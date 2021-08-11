@@ -1,7 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { projectDetails } from '../projectDetails';
+import { projects } from '../projects';
 
 @Component({
   selector: 'app-project-detail',
@@ -14,14 +15,17 @@ export class ProjectDetailComponent implements OnInit {
   loading = true;
   subscription: Subscription;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer,
+    ) { }
 
   ngOnInit() {
     this.subscription = this.route.params.subscribe(params => {
-      const currentProject = projectDetails.filter(project => project.title.toLowerCase() ===  params.id.toLowerCase());
+      const currentProject = projects.filter(project => project.projectName.toLowerCase() ===  params.id.toLowerCase());
       this.project = currentProject && currentProject.length ? currentProject[0] : [];
+      this.project;
       this.el.nativeElement.scrollTo(0, 0);
-      console.log(this.el.nativeElement)
       this.loading = false;
     });
   }
@@ -30,5 +34,9 @@ export class ProjectDetailComponent implements OnInit {
     if(this.subscription) {
       this.subscription.unsubscribe();
     }
+  }
+
+  videoUrl(video) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);
   }
 }

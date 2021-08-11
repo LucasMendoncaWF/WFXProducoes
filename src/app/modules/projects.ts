@@ -4,17 +4,71 @@ export const projects = [
     isHome: true,
     category: 'websérie',
     image: 'banner.jpg',
-    text: 
-    `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod accumsan sapien, sed laoreet lorem tempus sed. Proin lacinia bibendum ipsum non convallis. Mauris eu sem justo. Sed aliquet cursus gravida. Nunc neque libero, efficitur eu lorem nec, congue aliquam velit. Curabitur id gravida magna.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod accumsan sapien, sed laoreet lorem tempus sed. Proin lacinia bibendum ipsum non convallis. Mauris eu sem justo. Sed aliquet cursus gravida. Nunc neque libero, efficitur eu lorem nec, congue aliquam velit. Curabitur id gravida magna</p>`
+    banner: 'banner.jpg',
+    sinopse: 'Quatro amigos que falharam em tudo que tentaram na vida, decidem se juntar para criar uma loja vegetariana online, porém, nenhum deles tem conhecimento sobre internet ou veganismo, obrigando-os a contratar novas pessoas que Renato, um dos quatro, encontrou em sites suspeitos pela internet.',
+    type: 'Comédia',
+    format: 'Websérie',
+    qtd: '10 Episódios',
+    teamFolder: 'discordando',
+    participants: [
+      {name: 'Lucas Mendonça', photo: 'lucasmarcio.png', position: 'Personagem: Marcio / Diretor / Roteirista' },
+      {name: 'Pedro Fernandes', photo: 'pedro.png', position: 'Personagem: Renato / Roteirista' },
+      {name: 'Frederico', photo: 'fred.png', position: 'Personagem: Fernando' },
+      {name: 'Lucas Freire', photo: 'lucsedson.jpg', position: 'Personagem: Edson' },
+      {name: 'Deivid', photo: 'akkai.png', position: 'Roteirista' },
+      {name: 'Daniel Galuppo', photo: 'daniel.jpg', position: 'Editor' },
+      {name: 'Henrique', photo: 'rick.png', position: 'Personagem: Felipe o Hacker' },
+      {name: 'NAO SEI', photo: 'gil.png', position: 'Personagem: Gabriel' },
+      {name: 'James', photo: 'baixinha.jpg', position: 'Personagem: Maria' },
+      {name: 'Arthur', photo: 'arthur.png', position: 'Personagem: Luiz' },
+      {name: 'Deivid Sabino', photo: 'deivid.jpg', position: 'Personagem: Adam' },
+      {name: 'Francisco Nacca', photo: 'dx.png', position: 'Personagem: Valderlei' },
+      {name: 'Eduardo', photo: 'edu.jpg', position: 'Personagem: Eduardo' },
+      {name: 'Filipe', photo: 'filip.png', position: 'Personagem: Paulo' },
+      {name: 'Geovana', photo: 'geo.jpg', position: 'Personagem: Jasmin' },
+      {name: 'Bruno', photo: 'gamer.jpeg', position: 'Personagem: João Paulo' },
+      {name: 'Guilherme Dunguel', photo: 'guiel.png', position: 'Personagem: Biel / Designer' },
+      {name: 'Henrique Adamo', photo: 'henrique.jpeg', position: 'Personagem: Pietro Vlogs' },
+      {name: 'Nao sei', photo: 'hoss.jpg', position: 'Personagem: Fábio' },
+      {name: 'Iryiella', photo: 'iryiella.jpg', position: 'Personagem: Júlia' },
+      {name: 'Maiara', photo: 'maiara.jpg', position: 'Personagem: Luiza' },
+      {name: 'Rafael', photo: 'rafa.jpg', position: 'Personagem: Fausto' },
+      {name: 'Jennifer', photo: 'jennifer.jpg', position: 'Personagem: Fernanda' },
+      {name: 'Bryan Lima', photo: 'siu.png', position: 'Personagem: Diretor do trailer / Assistência' },
+      {name: 'Nicolas', photo: 'muguerso.png', position: 'Personagem: Julho' },
+      {name: 'Tatyillana', photo: 'taty.png', position: 'Personagem: Patricia' },
+    ],
+    infos: [{
+      image: { name: 'logo-discordando.png', size: 'medium' },
+      texts: [
+        'A série Discordando foi criada em parceria com 25 streamers, é gravada no Discord (aplicativo de vídeo-chamadas) e é publicada no youtube, no canal <a target="_blank" class="theme-text" href="https://youtube.com/wfxCanal">WFX</a>.',
+        'O projeto foi criado e escrito por Lucas Mendonça, desenvolvido com baixo orçamento por ser seu primeiro projeto, mas com auxílio de todos os participantes que acreditaram no projeto.',
+        'Discordando tem como inspirações séries como: <i>The Office, Parks and Recreation e Brooklyn 99</i>.',
+      ]
+    },
+    {
+      image: { name: 'banner.jpg', size: 'medium' },
+      texts: [
+        'Os quatro protagonistas tem como missão principal fazer a loja ser um sucesso, mas não esperavam que seria o trabalho mais díficil da vida deles, não por ser trabalhoso, mas por sempre criarem mais problemas ao tentar resolver outros.',
+        '<b>Protagonistas</b>',
+        '<b>Márcio Pereira:</b> Um empresário odiador do movimento vegano, esta afundado em dívidas por ter sido denunciado em um esquema de pirâmide de coachs, ama dinheiro e vive estressado, seu único refúgio é o podcast que grava diariamente mas não sabe que não publica online.',
+        '<b>Edson Pereira:</b> Primo de Márcio e péssimo polícial, prendeu mais colegas de trabalho do que criminosos, está prestes a perder o emprego, então precisou ligar um computador pela primeira vez para tentar ganhar dinheiro com a loja, ele é sentimental e tem um raciocínio únicamente ruim.',
+        '<b>Renato Rocha:</b> Desempregado e carísmatico, se tentasse ser comediante passaria fome, mas continua fazendo piadas, ótimo negociador que imita idosas de vez em quando, seu maior desafio é descobrir quem é o homem que mora com ele.',
+        '<b>Fernando Fernandes:</b> Em provável efeito de entorpecentes, não consegue prestar atenção em nada e não gosta de trabalhar, mas é o maior solucionador de problemas que existe por causa da vasta rede de contatos que formou durante suas viajens suspeitas.',
+        '<a target="_blank" class="theme-text" href="https://discordando.wfxproducoes.com/">Site oficial da série </a>'
+      ],
+    }],
   },
   {
-    projectName: 'HQ',
+    projectName: 'Cidade Devorada',
     isHome: true,
     category: 'HQ',
     image: 'placeholder.png',
-    text: 
-    `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod accumsan sapien, sed laoreet lorem tempus sed. Proin lacinia bibendum ipsum non convallis. Mauris eu sem justo. Sed aliquet cursus gravida. Nunc neque libero, efficitur eu lorem nec, congue aliquam velit. Curabitur id gravida magna.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod accumsan sapien, sed laoreet lorem tempus sed. Proin lacinia bibendum ipsum non convallis. Mauris eu sem justo. Sed aliquet cursus gravida. Nunc neque libero, efficitur eu lorem nec, congue aliquam velit. Curabitur id gravida magna</p>`
+    banner: 'banner-home.jpg',
+    sinopse: 'Bruno é um guarda de uma cidade pacífica em meio ao deserto, como guarda, ele recebe um amuleto que garante ao proprietário um poder singular, sua responsabilidade se resume em vigiar o lado de fora da cidade para que evitar que monstros invadam, em uma das noites de vigia um garoto aparece em sua frente, mas some pouco tempo depois de Bruno percebe-lo, levando com ele sua cidade inteira. \n\n Após esse acontecimento, o guarda inicia uma jornada em busca de resolver esse mistério e econtrar sua cidade.',
+    type: 'Aventura, Comédia, Mistério, Ação',
+    format: 'HQ',
+    qtd: '',
+    images: ['', ''],
   }
 ]
