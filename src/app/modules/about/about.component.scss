@@ -11,6 +11,10 @@
   padding: 100px 0;
 }
 
+.banner-title {
+  font-family: $font-bold;
+}
+
 section {
   max-height: calc(100vh - 60px);
   overflow: auto;
@@ -52,10 +56,12 @@ section {
 
 @media only screen and (max-width: $mobileSize) {
   .about-text {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
+    padding: 40px 30px;
   }
 
   .area-title {
     padding-top: 0;
+    padding-left: 30px;
   }
 }

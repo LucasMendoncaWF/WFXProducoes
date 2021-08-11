@@ -10,7 +10,7 @@
   text-transform: uppercase;
 
   span {
-    font-family: coolvetica_bold;
+    font-family: $font-bold;
     color: $lightColor !important;
     text-shadow: 2px 0px 9px $darkColor;
   }
