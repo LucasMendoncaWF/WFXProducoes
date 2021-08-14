@@ -27,8 +27,8 @@ export class HeaderComponent implements OnInit {
     this.darkmodeService.darkMode$.next(!this.darkmode);
   }
 
-  openMobileMenu(value) {
-    this.showMobileMenu = value ? value : !this.showMobileMenu;
+  openMobileMenu() {
+    this.showMobileMenu = !this.showMobileMenu;
   }
 
   close() {
