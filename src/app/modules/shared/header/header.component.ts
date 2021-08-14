@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DarkmodeService } from 'src/app/services/darkmode.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { DarkmodeService } from 'src/app/services/darkmode.service';
 })
 export class HeaderComponent implements OnInit {
   darkmode;
+  showMobileMenu = false;
 
   constructor(
     private darkmodeService: DarkmodeService
@@ -26,4 +27,11 @@ export class HeaderComponent implements OnInit {
     this.darkmodeService.darkMode$.next(!this.darkmode);
   }
 
+  openMobileMenu(value) {
+    this.showMobileMenu = value ? value : !this.showMobileMenu;
+  }
+
+  close() {
+    this.showMobileMenu = false;
+  }
 }

@@ -20,6 +20,12 @@
   transform: translateX(-15px);
 }
 
+.logo {
+  img {
+    height: 70px;
+  }
+}
+
 
 .title {
   font-size: 24px;
@@ -37,13 +43,10 @@
   margin-left: -20px;
 }
 
-.right-project .project-text {
-  text-align: right;
-}
-
 .project-text {
   width: calc(52% - 100px);
   padding: 50px;
+  padding-top: 30px;
   animation: faddeIn 1s;
   line-height: 26px;
 
@@ -58,13 +61,17 @@
   }
 }
 
+p {
+  margin: 12px 0;
+}
+
 .sinopse, .title {
   text-align: left;
 }
 
 .right-project {
-  margin-top: 80px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 80px;
 
   .project-image {
     border-radius: 20px;

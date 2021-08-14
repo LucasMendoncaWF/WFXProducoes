@@ -1,10 +1,12 @@
 <section class="notfound theme-content">
-  <div class="banner"></div>
+  <div class="banner">
+    <div class="logo"><img src="/assets/images/logo.png" /></div>
+  </div>
   <div class="content">
     <h1>Pagina não encontrada!</h1>
     <a class="theme-text" routerLink="">Voltar a página inicial</a>
   </div>
-  <app-suggestions></app-suggestions>
+  <app-suggestions [isDetailPage]="true"></app-suggestions>
   
   <app-footer></app-footer>
 </section>

@@ -4,7 +4,7 @@
   </div>
   <div class="content theme-content">
     <app-project [project]="project" [isRight]="!!(projects.indexOf(project) % 2)" *ngFor="let project of projects"></app-project>
-    <app-categories *ngIf="showCategories"></app-categories>
+    <app-categories *ngIf="showCategories && projects.length"></app-categories>
 
     <div class="not-found-text" *ngIf="!loading && !projects.length">Categoria não encontrada!</div>
     <app-suggestions *ngIf="!loading" [startFromRight]="true" [excludeCategory]="projects.length > 0 ? projects[0].category : ''" [isDetailPage]="true"></app-suggestions>

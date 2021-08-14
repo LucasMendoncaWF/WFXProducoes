@@ -15,6 +15,7 @@ import { SuggestionsComponent } from './modules/suggestions/suggestions.componen
 import { AboutComponent } from './modules/about/about.component';
 import { TeamMemberComponent } from './modules/team-member/team-member.component';
 import { SafePipeModule } from 'safe-pipe';
+import { ContactComponent } from './modules/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SafePipeModule } from 'safe-pipe';
     SuggestionsComponent,
     AboutComponent,
     TeamMemberComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

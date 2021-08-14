@@ -12,6 +12,7 @@
 .logo-area {
   height: 300px;
   padding: 50px;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -21,8 +22,12 @@
 }
 
 .logo {
-  margin: 40px 0;
-  height: 120px;
+  margin: 20px 0;
+  height: 160px;
+
+  img {
+    height: 100%;
+  }
 }
 
 .about {

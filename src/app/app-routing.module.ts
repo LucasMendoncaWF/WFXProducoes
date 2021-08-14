@@ -5,6 +5,7 @@ import { HomeComponent } from './modules/home/home.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { ProjectDetailComponent } from './modules/project-detail/project-detail.component';
 import { CategoriesPageComponent } from './modules/categories-page/categories-page.component';
+import { ContactComponent } from './modules/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path: 'sobre',
     component: AboutComponent,
+  },
+  {
+    path: 'contato',
+    component: ContactComponent,
   },
   {
     path: 'categoria/:id',

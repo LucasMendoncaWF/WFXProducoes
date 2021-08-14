@@ -1,17 +1,43 @@
 <section [ngClass]="darkmode ? 'dark' : 'light'" class="header theme-header">
   <div class="header-content">
-    <a routerLink="" class="logo">WFX</a>
+    <a routerLink="" class="logo"></a>
     <div class="links">
       <a class="text-link" routerLink="">Inicio</a>
+      <a class="text-link" routerLink="contato">Contato</a>
       <a class="text-link" routerLink="sobre">Sobre</a>
       <a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/youtube_light.png)'" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a>
       <a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/twitter_light.png)'" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a>
+      <a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/discord_light.png)'" id="discord" href="https://discord.gg/6j9Fg8C" target="_blank"></a>
 
       <a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/youtube_dark.png)'" *ngIf="!darkmode" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a>
       <a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/twitter_dark.png)'" *ngIf="!darkmode" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a>
+      <a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/discord_dark.png)'" *ngIf="!darkmode" id="discord" href="https://discord.gg/6j9Fg8C" target="_blank"></a>
     </div>
   </div>
   
   <button [style.background-image]="'url(/assets/icons/dark.png)'"  *ngIf="!darkmode" (click)="toggleDarkMode()" title="darkmode"></button>
   <button [style.background-image]="'url(/assets/icons/light.png)'"  *ngIf="darkmode" (click)="toggleDarkMode()" title="darkmode"></button>
+
+  <div class="mobile-menu" (blur)="openMobileMenu(false)">
+    <div class="icon" (click)="openMobileMenu()">
+      <div class="bar theme-contrast"></div>
+      <div class="bar theme-contrast"></div>
+      <div class="bar theme-contrast"></div>
+    </div>
+
+    <div class="mobile-links theme-content" (click)="close()" *ngIf="showMobileMenu">
+      <ul>
+      <li><a class="text-link" routerLink="">Inicio</a></li>
+      <li><a class="text-link" routerLink="contato">Contato</a></li>
+      <li><a class="text-link" routerLink="sobre">Sobre</a></li>
+      <li><a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/youtube_light.png)'" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a></li>
+      <li><a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/twitter_light.png)'" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a></li>
+      <li><a class="icon-link" *ngIf="darkmode" [style.background-image]="'url(/assets/icons/discord_light.png)'" id="discord" href="https://discord.gg/6j9Fg8C" target="_blank"></a></li>
+  
+      <li><a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/youtube_dark.png)'" *ngIf="!darkmode" id="youtube" href="https://www.youtube.com/c/wfxcanal" target="_blank"></a></li>
+      <li><a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/twitter_dark.png)'" *ngIf="!darkmode" id="twitter" href="https://twitter.com/lucaswfx_" target="_blank"></a></li>
+      <li><a class="icon-link dark-icon" [style.background-image]="'url(/assets/icons/discord_dark.png)'" *ngIf="!darkmode" id="discord" href="https://discord.gg/6j9Fg8C" target="_blank"></a></li>
+    </ul>
+    </div>
+  </div>
 </section>

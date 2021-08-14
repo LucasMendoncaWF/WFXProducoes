@@ -21,50 +21,40 @@ section {
   overflow-x: hidden;
 }
 
-.about-text {
-  padding: 50px 40px;
-  line-height: 30px;
-  font-size: 18px;
-  width: calc(60% - 80px);
-}
-
-.area-title {
-  text-transform: capitalize;
-  font-size: 30px;
-  padding: 40px;
-  padding-bottom: 0;
-}
-
-.team-members {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  padding: 40px 30%;
 }
 
-.image {
-  margin: 50px 0px;
-  float: right;
-  width: 40%;
+.title {
+  font-size: 30px;
+}
+
+.contact-way {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.discord-icon {
+  width: 80px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   img {
-    width: 350px;
-    margin-left: calc(50% - 175px);
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: $mobileSize) {
-  .about-text {
-    width: calc(100% - 60px);
+  .content {
     padding: 40px 30px;
   }
 
-  .area-title {
-    padding-top: 0;
-    padding-left: 30px;
+  .discord-icon {
+    width: 60px;
+    margin-top: 10px;
   }
 }

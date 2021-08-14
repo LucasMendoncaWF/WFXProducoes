@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="not-found-text" *ngIf="!loading && !project.projectName">Projeto não encontrado!</div>
-  <app-suggestions [excludeTitle]="project.projectName" [isDetailPage]="true"></app-suggestions>
+  <app-suggestions [excludeTitle]="project ? project.projectName : ''" [isDetailPage]="true"></app-suggestions>
   <app-footer></app-footer>
   
 </section>

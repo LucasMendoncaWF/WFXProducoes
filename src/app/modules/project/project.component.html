@@ -3,7 +3,8 @@
   <div class="project-image image-shadow mobile" *ngIf="isRight" [style.background-image]="'url(/assets/images/'+ project.image +')'"></div>
   <div class="project-text theme-text">
     <hr class="theme-border-top desktop" />
-    <div class="title">{{ project.projectName }}</div>
+    <div *ngIf="project.logo" class="logo"><img [src]="'/assets/images/' + project.logo" alt="projectLogo"/></div>
+    <div *ngIf="!project.logo" class="title">{{ project.projectName }}</div>
     <p class="sinopse">{{ project.sinopse }}</p>
     <p>Genêro: {{ project.type }}</p>
     <p>Formato: {{ project.format }}</p>

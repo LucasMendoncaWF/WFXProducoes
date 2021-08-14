@@ -5,10 +5,11 @@ export const projects = [
     category: 'websérie',
     image: 'banner.jpg',
     banner: 'banner.jpg',
-    sinopse: 'Quatro amigos que falharam em tudo que tentaram na vida, decidem se juntar para criar uma loja vegetariana online, porém, nenhum deles tem conhecimento sobre internet ou veganismo, obrigando-os a contratar novas pessoas que Renato, um dos quatro, encontrou em sites suspeitos pela internet.',
+    sinopse: 'Quatro amigos que falharam em tudo que tentaram na vida, decidem se juntar para criar uma loja vegetariana online. Porém, nenhum deles tem conhecimento sobre internet ou veganismo, obrigando-os a contratar novas pessoas que Renato, um dos quatro, encontrou em sites suspeitos pela internet.',
     type: 'Comédia',
     format: 'Websérie',
     qtd: '10 Episódios',
+    logo: 'logo-discordando.png',
     teamFolder: 'discordando',
     participants: [
       {name: 'Lucas Mendonça', photo: 'lucasmarcio.png', position: 'Personagem: Marcio / Diretor / Roteirista' },
@@ -18,7 +19,7 @@ export const projects = [
       {name: 'Deivid', photo: 'akkai.png', position: 'Roteirista' },
       {name: 'Daniel Galuppo', photo: 'daniel.jpg', position: 'Editor' },
       {name: 'Henrique', photo: 'rick.png', position: 'Personagem: Felipe o Hacker' },
-      {name: 'NAO SEI', photo: 'gil.png', position: 'Personagem: Gabriel' },
+      {name: 'Apelido: ProfGil', photo: 'gil.png', position: 'Personagem: Gabriel' },
       {name: 'James', photo: 'baixinha.jpg', position: 'Personagem: Maria' },
       {name: 'Arthur', photo: 'arthur.png', position: 'Personagem: Luiz' },
       {name: 'Deivid Sabino', photo: 'deivid.jpg', position: 'Personagem: Adam' },
@@ -41,15 +42,15 @@ export const projects = [
     infos: [{
       image: { name: 'logo-discordando.png', size: 'medium' },
       texts: [
-        'A série Discordando foi criada em parceria com 25 streamers, é gravada no Discord (aplicativo de vídeo-chamadas) e é publicada no youtube, no canal <a target="_blank" class="theme-text" href="https://youtube.com/wfxCanal">WFX</a>.',
-        'O projeto foi criado e escrito por Lucas Mendonça, desenvolvido com baixo orçamento por ser seu primeiro projeto, mas com auxílio de todos os participantes que acreditaram no projeto.',
-        'Discordando tem como inspirações séries como: <i>The Office, Parks and Recreation e Brooklyn 99</i>.',
+        'A série Discordando foi criada em parceria com 25 streamers. É gravada no Discord (aplicativo de vídeo-chamadas) e é publicada no youtube, no canal <a target="_blank" class="theme-text" href="https://youtube.com/wfxCanal">WFX</a>.',
+        'Foi criado e escrito por Lucas Mendonça. desenvolvido com baixo orçamento por ser seu primeiro projeto, mas com auxílio de todos os participantes que acreditaram no projeto.',
+        'Discordando tem como inspirações as séries: <i>The Office, Parks and Recreation e Brooklyn 99</i>.',
       ]
     },
     {
       image: { name: 'banner.jpg', size: 'medium' },
       texts: [
-        'Os quatro protagonistas tem como missão principal fazer a loja ser um sucesso, mas não esperavam que seria o trabalho mais díficil da vida deles, não por ser trabalhoso, mas por sempre criarem mais problemas ao tentar resolver outros.',
+        'Os quatro protagonistas tem como missão principal fazer a loja ser um sucesso. Eles não esperavam que seria o trabalho mais díficil da vida deles, não por ser trabalhoso, mas por sempre criarem mais problemas ao tentar resolver outros.',
         '<b>Protagonistas</b>',
         '<b>Márcio Pereira:</b> Um empresário odiador do movimento vegano, esta afundado em dívidas por ter sido denunciado em um esquema de pirâmide de coachs, ama dinheiro e vive estressado, seu único refúgio é o podcast que grava diariamente mas não sabe que não publica online.',
         '<b>Edson Pereira:</b> Primo de Márcio e péssimo polícial, prendeu mais colegas de trabalho do que criminosos, está prestes a perder o emprego, então precisou ligar um computador pela primeira vez para tentar ganhar dinheiro com a loja, ele é sentimental e tem um raciocínio únicamente ruim.',
@@ -65,8 +66,8 @@ export const projects = [
     category: 'HQ',
     image: 'placeholder.png',
     banner: 'banner-home.jpg',
-    sinopse: 'Bruno é um guarda de uma cidade pacífica em meio ao deserto, como guarda, ele recebe um amuleto que garante ao proprietário um poder singular, sua responsabilidade se resume em vigiar o lado de fora da cidade para que evitar que monstros invadam, em uma das noites de vigia um garoto aparece em sua frente, mas some pouco tempo depois de Bruno percebe-lo, levando com ele sua cidade inteira. \n\n Após esse acontecimento, o guarda inicia uma jornada em busca de resolver esse mistério e econtrar sua cidade.',
-    type: 'Aventura, Comédia, Mistério, Ação',
+    sinopse: 'Bruno é um guarda de uma cidade pacífica em meio ao deserto e como guarda, recebe um amuleto que garante ao proprietário um poder singular, em seu caso, o poder de controlar rochas ao seu alcance. Sua responsabilidade se resume em vigiar o lado de fora da cidade para evitar que monstros invadam. Em uma das noites de vigia um garoto aparece em sua frente e some pouco tempo depois, levando com ele sua cidade inteira. \n\n Após esse acontecimento, o guarda inicia uma jornada em busca de resolver esse mistério e econtrar sua cidade.',
+    type: 'Aventura, Comédia, Mistério e Ação',
     format: 'HQ',
     qtd: '',
     images: ['', ''],

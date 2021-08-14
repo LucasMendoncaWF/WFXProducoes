@@ -11,21 +11,26 @@ export class SuggestionsComponent implements OnChanges {
   @Input() excludeTitle = '';
   @Input() isDetailPage = false;
   @Input() startFromRight = false;
+  @Input() customFilter;
   projects;
 
   constructor() { }
 
   ngOnChanges() {
     this.projects = projects
-    .filter(project => project.isHome && this.checkCategory(project) && this.checkTitle(project));
+    .filter(project =>  this.checkCustomFilter(project) && this.checkCategory(project) && this.checkTitle(project));
+  }
+
+  checkCustomFilter(project) {
+    return !this.customFilter || project[this.customFilter];
   }
 
   checkCategory(project) {
-    return project.category.toLowerCase() !== this.excludeCategory.toLowerCase();
+    return !this.excludeCategory || project.category.toLowerCase() !== this.excludeCategory.toLowerCase();
   }
 
   checkTitle(project) {
-    return project.projectName.toLowerCase() !== this.excludeTitle.toLowerCase();
+    return !this.excludeTitle || project.projectName.toLowerCase() !== this.excludeTitle.toLowerCase();
   }
 
 }

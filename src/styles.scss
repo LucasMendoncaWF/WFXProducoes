@@ -57,14 +57,20 @@ body {
   opacity: 0.8;
 }
 
-
-
 .dark .theme-color{
   background-color: $darkColor;
 }
 
 .light .theme-color{
   background-color: $lightColor;
+}
+
+.dark .theme-contrast{
+  background-color: $lightColor;
+}
+
+.light .theme-contrast{
+  background-color: $darkColor;
 }
 
 
@@ -111,4 +117,24 @@ a {
   .desktop {
     display: none;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #969696;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(32, 32, 32);
 }
