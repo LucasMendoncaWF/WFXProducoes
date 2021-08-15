@@ -30,7 +30,7 @@ export const projects = [
       {name: 'Bruno', photo: 'gamer.jpeg', position: 'Personagem: João Paulo' },
       {name: 'Guilherme Dunguel', photo: 'guiel.png', position: 'Personagem: Biel / Designer' },
       {name: 'Henrique Adamo', photo: 'henrique.jpeg', position: 'Personagem: Pietro Vlogs' },
-      {name: 'Nao sei', photo: 'hoss.jpg', position: 'Personagem: Fábio' },
+      {name: 'Hosã', photo: 'hoss.jpg', position: 'Personagem: Fábio' },
       {name: 'Iryiella', photo: 'iryiella.jpg', position: 'Personagem: Júlia' },
       {name: 'Maiara', photo: 'maiara.jpg', position: 'Personagem: Luiza' },
       {name: 'Rafael', photo: 'rafa.jpg', position: 'Personagem: Fausto' },
