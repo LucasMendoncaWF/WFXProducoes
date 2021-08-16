@@ -1,7 +1,7 @@
 @import '../../../assets/variables.scss';
 
 .banner {
-  background-image: url('/assets/images/sobre.jpg');
+  background-image: url('/assets/images/banner-home.jpg');
   background-size: cover;
   color: $lightColor;
   text-shadow: 2px 0px 9px $darkColor;
@@ -9,6 +9,7 @@
   text-align: center;
   text-transform: capitalize;
   padding: 100px 0;
+  background-position: 0 -300px;
 }
 
 .banner-title {

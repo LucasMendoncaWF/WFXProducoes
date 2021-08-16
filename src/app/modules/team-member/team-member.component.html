@@ -1,4 +1,4 @@
-<div class="team-member theme-color"> 
+<div class="team-member theme-color" (click)="onClick()" [class.has-link]="!!member.link"> 
   <div class="photo" [style.background-image]="'url(/assets/pessoas/' + member.photo + ')'"></div>
   <div class="name">{{ member.name }}</div>
   <div class="position">{{ member.position }}</div>

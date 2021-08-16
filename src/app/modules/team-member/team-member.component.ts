@@ -12,4 +12,10 @@ export class TeamMemberComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick() {
+    if (this.member.link) {
+      window.open(this.member.link, '_blank');
+    }
+  }
+
 }

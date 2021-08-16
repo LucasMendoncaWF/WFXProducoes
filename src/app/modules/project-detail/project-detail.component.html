@@ -1,7 +1,8 @@
 <section #detailProject class="detail theme-content">
   <div *ngIf="project && project.projectName">
     <div class="banner" [style.background-image]="'url(/assets/images/'+ project.banner +')'">
-      <span *ngIf="!project.hasLogo">{{ project.projectName }}</span>
+      <span *ngIf="!project.logo">{{ project.projectName }}</span>
+      <div *ngIf="!!project.logo" class="logo"><img [src]="'/assets/images/' + project.logo" alt="logo"/></div>
     </div>
     <div class="content">
       <div class="principal">

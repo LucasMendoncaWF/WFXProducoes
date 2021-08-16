@@ -27,6 +27,10 @@ button {
   background-size: cover;
   background-position: center;
   background-image: url('/assets/images/logo.png');
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .header-content {

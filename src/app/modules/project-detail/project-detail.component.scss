@@ -16,6 +16,14 @@
   }
 }
 
+.logo {
+  height: 90px;
+
+  img {
+    height: 100%;
+  }
+}
+
 .detail {
   max-height: calc(100vh - 60px);
   overflow: auto;
