@@ -3,7 +3,7 @@ export const projects = [
     projectName: 'Discordando',
     isHome: true,
     category: 'websérie',
-    image: 'banner.jpg',
+    image: 'banner.png',
     banner: 'discordando.jpg',
     sinopse: 'Quatro amigos que falharam em tudo que tentaram na vida, decidem se juntar para criar uma loja vegetariana online. Porém, nenhum deles tem conhecimento sobre internet ou veganismo, obrigando-os a contratar novas pessoas que Renato, um dos quatro, encontrou em sites suspeitos pela internet.',
     type: 'Comédia',
@@ -38,6 +38,7 @@ export const projects = [
       {name: 'Bryan Lima', photo: 'siu.png', position: 'Personagem: Diretor do trailer / Assistência', link: 'https://twitch.tv/siujoga' },
       {name: 'Nicolas', photo: 'muguerso.png', position: 'Personagem: Julho', link: 'https://twitch.tv/muguerso' },
       {name: 'Tatyillana', photo: 'taty.png', position: 'Personagem: Patricia', link: 'https://twitch.tv/tatyilana' },
+      {name: 'Lais Faccin', photo: 'lais.jpg', position: 'Personagem: Escritora', link: 'https://www.twitch.tv/lais_faccin' },
     ],
     infos: [{
       image: { name: 'logo-discordando.png', size: 'medium' },
@@ -48,14 +49,14 @@ export const projects = [
       ]
     },
     {
-      image: { name: 'banner.jpg', size: 'medium' },
+      image: { name: 'banner.png', size: 'medium' },
       texts: [
         'Os quatro protagonistas tem como missão principal fazer a loja ser um sucesso. Eles não esperavam que seria o trabalho mais díficil da vida deles, não por ser trabalhoso, mas por sempre criarem mais problemas ao tentar resolver outros.',
         '<b>Protagonistas</b>',
         '<b>Márcio Pereira:</b> Um empresário odiador do movimento vegano, esta afundado em dívidas por ter sido denunciado em um esquema de pirâmide de coachs, ama dinheiro e vive estressado, seu único refúgio é o podcast que grava diariamente mas não sabe que não publica online.',
         '<b>Edson Pereira:</b> Primo de Márcio e péssimo polícial, prendeu mais colegas de trabalho do que criminosos, está prestes a perder o emprego, então precisou ligar um computador pela primeira vez para tentar ganhar dinheiro com a loja, ele é sentimental e tem um raciocínio únicamente ruim.',
         '<b>Renato Rocha:</b> Desempregado e carísmatico, se tentasse ser comediante passaria fome, mas continua fazendo piadas, ótimo negociador que imita idosas de vez em quando, seu maior desafio é descobrir quem é o homem que mora com ele.',
-        '<b>Fernando Fernandes:</b> Em provável efeito de entorpecentes, não consegue prestar atenção em nada e não gosta de trabalhar, mas é o maior solucionador de problemas que existe por causa da vasta rede de contatos que formou durante suas viajens suspeitas.',
+        '<b>Fernando Fernandes:</b> Em provável efeito de entorpecentes, não consegue prestar atenção em nada e não gosta de trabalhar, mas é o maior solucionador de problemas que existe por causa da vasta rede de contatos que formou durante suas viagens suspeitas.',
         '<a target="_blank" class="theme-text" href="https://discordando.wfxproducoes.com/">Site oficial da série </a>'
       ],
     }],
