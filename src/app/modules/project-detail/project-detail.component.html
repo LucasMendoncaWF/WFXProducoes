@@ -10,6 +10,9 @@
         <p *ngIf="project.type"><b>Gênero:</b> {{ project.type }};</p>
         <p *ngIf="project.format"><b>Formato:</b> {{ project.format }};</p>
         <p *ngIf="project.qtd">{{ project.qtd }};</p>
+
+        <h3 class="trailer-title">Trailer:</h3>
+        <iframe width="100%" height="315" [src]="videoUrl(project.trailer)" title="trailer" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div *ngIf="project.infos" class="info-area">
@@ -22,6 +25,17 @@
           <div class="video" *ngIf="info.video">
             <iframe width="100%" [src]="videoUrl(info.video)" title="video" frameborder="0" allowfullscreen></iframe>
           </div>
+        </div>
+      </div>
+      <div *ngIf="project.eps" class="eps">
+        <span class="session-title theme-border-top">Episódios:</span>
+        <div class="list">
+          <a [href]="ep.link ? ep.link : 'https://youtube.com/WfXcanal'" [class.no-link]="!ep.link " class="ep" target="_blank" *ngFor="let ep of project.eps; let i = index">
+            <div> 
+              <img [src]="'/assets/thumbs/' + ep.img" [alt]="ep.title"/>
+              <div class="ep-name">{{ i + 1 }}º - {{ ep.title }}</div>
+            </div>
+          </a>
         </div>
       </div>
       <div *ngIf="project.participants" class="participants">

@@ -71,6 +71,45 @@ iframe {
 .list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.eps {
+  margin-bottom: 20px;
+
+  .list {
+    margin-top: 20px;
+  }
+}
+
+.ep {
+  width: 31%;
+  color: $lightColor;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 50px;
+
+  img {
+    width: 100%;
+  }
+
+  &:not(.no-link):hover {
+    transform: scale(1.1);
+  }
+}
+
+.no-link {
+  cursor: default;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.ep-name {
+  margin-top: -6px;
+  padding: 5px 0;
+  background-image: linear-gradient(to right, #f87069, #ff62c7); 
 }
 
 @media only screen and (max-width: $mobileSize) {
@@ -96,4 +135,12 @@ iframe {
     height: 60px;
   }
 
+  .ep {
+    margin: 5px 0;
+    width: 100%;
+  
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }

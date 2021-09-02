@@ -49,7 +49,6 @@ export const projects = [
       ]
     },
     {
-      image: { name: 'banner.png', size: 'medium' },
       texts: [
         'Os quatro protagonistas tem como missão principal fazer a loja ser um sucesso. Eles não esperavam que seria o trabalho mais díficil da vida deles, não por ser trabalhoso, mas por sempre criarem mais problemas ao tentar resolver outros.',
         '<b>Protagonistas</b>',
@@ -57,9 +56,21 @@ export const projects = [
         '<b>Edson Pereira:</b> Primo de Márcio e péssimo polícial, prendeu mais colegas de trabalho do que criminosos, está prestes a perder o emprego, então precisou ligar um computador pela primeira vez para tentar ganhar dinheiro com a loja, ele é sentimental e tem um raciocínio únicamente ruim.',
         '<b>Renato Rocha:</b> Desempregado e carísmatico, se tentasse ser comediante passaria fome, mas continua fazendo piadas, ótimo negociador que imita idosas de vez em quando, seu maior desafio é descobrir quem é o homem que mora com ele.',
         '<b>Fernando Fernandes:</b> Em provável efeito de entorpecentes, não consegue prestar atenção em nada e não gosta de trabalhar, mas é o maior solucionador de problemas que existe por causa da vasta rede de contatos que formou durante suas viagens suspeitas.',
-        '<a target="_blank" class="theme-text" href="https://discordando.wfxproducoes.com/">Site oficial da série </a>'
       ],
     }],
+    trailer: '5W5AUniiN-s',
+    eps: [
+      { title: 'A Antrevista', link: 'https://www.youtube.com/watch?v=5W5AUniiN-s', img: 'ep1.png' },
+      { title: 'O Investidor', link: '', img: 'ep1.png' },
+      { title: 'O Site', link: '', img: 'ep1.png' },
+      { title: 'O Podcast', link: '', img: 'ep1.png' },
+      { title: 'A Dinâmica', link: '', img: 'ep1.png' },
+      { title: 'A Tapioca', link: '', img: 'ep1.png' },
+      { title: 'O Rival', link: '', img: 'ep1.png' },
+      { title: 'O Halloween', link: '', img: 'ep1.png' },
+      { title: 'O Youtuber', link: '', img: 'ep1.png' },
+      { title: 'A Crise', link: '', img: 'ep1.png' },
+    ],
   },
   {
     projectName: 'Cidade Devorada',
