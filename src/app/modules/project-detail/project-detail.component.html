@@ -11,8 +11,10 @@
         <p *ngIf="project.format"><b>Formato:</b> {{ project.format }};</p>
         <p *ngIf="project.qtd">{{ project.qtd }};</p>
 
-        <h3 class="trailer-title">Trailer:</h3>
-        <iframe width="100%" height="315" [src]="videoUrl(project.trailer)" title="trailer" frameborder="0" allowfullscreen></iframe>
+        <div *ngIf="project.trailer">
+          <h3 class="trailer-title">Trailer:</h3>
+          <iframe width="100%" height="315" [src]="videoUrl(project.trailer)" title="trailer" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
 
       <div *ngIf="project.infos" class="info-area">
