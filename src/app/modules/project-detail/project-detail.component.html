@@ -17,6 +17,18 @@
         </div>
       </div>
 
+      <div *ngIf="project.eps" class="eps">
+        <span class="session-title theme-border-top">Episódios:</span>
+        <div class="list">
+          <a [href]="ep.link ? ep.link : 'https://youtube.com/WfXcanal'" [class.no-link]="!ep.link " class="ep" target="_blank" *ngFor="let ep of project.eps; let i = index">
+            <div> 
+              <img [src]="'/assets/thumbs/' + ep.img" [alt]="ep.title"/>
+              <div class="ep-name">{{ i + 1 }}º - {{ ep.title }}</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <div *ngIf="project.infos" class="info-area">
         <span class="session-title theme-border-top">Mais Informações:</span>
         <div class="info" *ngFor="let info of project.infos">
@@ -27,17 +39,6 @@
           <div class="video" *ngIf="info.video">
             <iframe width="100%" [src]="videoUrl(info.video)" title="video" frameborder="0" allowfullscreen></iframe>
           </div>
-        </div>
-      </div>
-      <div *ngIf="project.eps" class="eps">
-        <span class="session-title theme-border-top">Episódios:</span>
-        <div class="list">
-          <a [href]="ep.link ? ep.link : 'https://youtube.com/WfXcanal'" [class.no-link]="!ep.link " class="ep" target="_blank" *ngFor="let ep of project.eps; let i = index">
-            <div> 
-              <img [src]="'/assets/thumbs/' + ep.img" [alt]="ep.title"/>
-              <div class="ep-name">{{ i + 1 }}º - {{ ep.title }}</div>
-            </div>
-          </a>
         </div>
       </div>
       <div *ngIf="project.participants" class="participants">
