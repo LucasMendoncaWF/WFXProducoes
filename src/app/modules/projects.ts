@@ -61,7 +61,7 @@ export const projects = [
     trailer: '5W5AUniiN-s',
     eps: [
       { title: 'A Antrevista', link: 'https://youtu.be/s8UduczkjqM', img: 'ep1.png' },
-      { title: 'O Investidor', link: 'https://youtu.be/pkdSqp1wfpc', img: 'ep2.jpg' },
+      { title: 'A Investidora', link: 'https://youtu.be/pkdSqp1wfpc', img: 'ep2.jpg' },
       { title: 'O Site', link: '', img: 'embreve.png' },
       { title: 'O Podcast', link: '', img: 'embreve.png' },
       { title: 'A Dinâmica', link: '', img: 'embreve.png' },
