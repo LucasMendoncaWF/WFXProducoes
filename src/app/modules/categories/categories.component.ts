@@ -14,10 +14,11 @@ export class CategoriesComponent implements OnInit {
   ngOnInit() {
     this.categories = [];
     projects.map(project => {
-      if(!this.categories.includes(project.category)){
-        this.categories.push({ name: project.category, link: '/categoria/' + project.category.toLowerCase() })
-      };
-    })
+      const currentCategory = this.categories.filter(category => category.name === project.category);
+      if(currentCategory && !currentCategory.length) {
+        this.categories.push({ name: project.category, link: '/categoria/' + project.category.toLowerCase() });
+      }
+    });
   }
 
 }
